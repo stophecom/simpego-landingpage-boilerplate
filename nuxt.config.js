@@ -1,27 +1,65 @@
 module.exports = {
-  /*
-  ** Build configuration
-  */
-  build: {},
-  /*
-  ** Headers
-  ** Common headers are already provided by @nuxtjs/pwa preset
-  */
-  head: {},
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Customize app manifest
-  */
+  head: {
+    title: 'Simpego',
+    titleTemplate: '%s - Simpego',
+    link: [
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://fonts.googleapis.com/css?family=Work+Sans:400,600,700'
+      }
+    ]
+  },
+  meta: {
+    name: 'Simpego',
+    description: "Simpego - Smart Versichert",
+    theme_color: '#5cdc8f',
+    ogHost: 'https://www.simpego.ch',
+    ogImage: { path: '/og-image.png' },
+    twitterCard: 'summary',
+    twitterSite: '@simpego_schweiz',
+    twitterCreator: '@simpego_schweiz'
+  },
   manifest: {
-    theme_color: '#3B8070'
+    name: 'Simpego',
+    short_name: 'Simpego',
+    description: "Simpego - Smart Versichert",
   },
   /*
-  ** Modules
-  */
+   ** Customize the progress-bar color
+   */
+  loading: {
+    color: '#5cdc8f'
+  },
   modules: [
-    '@nuxtjs/pwa'
-  ]
+    [
+      'nuxt-i18n-module',
+      {
+        languages: ['en', 'de']
+      }
+    ],
+    '@nuxtjs/pwa',
+  ],
+
+  generate: {
+    fallback: true
+  },
+  /*
+   ** Build configuration
+   */
+  build: {
+    // analyze: true,
+    extractCSS: true,
+    extend (config, { isDev, isClient, isServer }) {
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
+  }
 }

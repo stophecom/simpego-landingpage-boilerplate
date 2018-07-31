@@ -30,10 +30,6 @@
   padding-left: $sectionPadding;
   padding-right: $sectionPadding;
 
-  @include tablet {
-    padding-bottom: 0;
-  }
-
   a {
     color: $text-strong;
     display: block;
@@ -44,13 +40,13 @@
     display: flex;
     margin-top: 2em;
 
-    @include tablet {
+    @media screen and (min-width: $breakpointSmall) {
       align-items: center;
     }
   }
 
   &__menu {
-    @include tablet {
+    @media screen and (min-width: $breakpointSmall) {
       display: flex;
     }
 
@@ -74,6 +70,8 @@
     margin-top: 1em;
 
     a {
+      font-size: 1.5rem;
+      opacity: 0.6;
       padding: 0.4rem;
     }
   }

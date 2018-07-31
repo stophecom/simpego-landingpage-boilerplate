@@ -24,6 +24,7 @@ export default {
 
 html {
   font-family: $family-sans-serif;
+  font-size: $body-size;
 }
 
 *, *:before, *:after
@@ -32,9 +33,37 @@ html {
   margin: 0;
 }
 
+body {
+  background-color: $body-background-color;
+  color: $text;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: $body-line-height;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .main {
-  margin-top: $navbar-height;
+  margin-top: $header-height;
   min-height: calc(80vh);
+}
+
+.section {
+  padding-left: $sectionPadding;
+  padding-right: $sectionPadding;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
 }
 
 </style>

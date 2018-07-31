@@ -13,18 +13,21 @@ module.exports = {
   },
   meta: {
     name: 'Simpego',
-    description: "Simpego - Smart Versichert",
+    description: 'Simpego - Smart Versichert',
     theme_color: '#5cdc8f',
     ogHost: 'https://www.simpego.ch',
     ogImage: { path: '/og-image.png' },
     twitterCard: 'summary',
     twitterSite: '@simpego_schweiz',
-    twitterCreator: '@simpego_schweiz'
+    twitterCreator: '@simpego_schweiz',
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
   manifest: {
     name: 'Simpego',
     short_name: 'Simpego',
-    description: "Simpego - Smart Versichert",
+    description: 'Simpego - Smart Versichert'
   },
   /*
    ** Customize the progress-bar color
@@ -33,13 +36,8 @@ module.exports = {
     color: '#5cdc8f'
   },
   modules: [
-    [
-      'nuxt-i18n-module',
-      {
-        languages: ['en', 'de']
-      }
-    ],
     '@nuxtjs/pwa',
+    ['nuxt-sass-resources-loader', './assets/main.scss']
   ],
 
   generate: {

@@ -51,7 +51,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .container {
     min-height: 100vh;
     display: flex;
@@ -67,6 +67,10 @@
     font-size: 100px;
     color: #35495e;
     letter-spacing: 1px;
+  }
+
+  .title {
+    // color: $primary;
   }
 
   .subtitle {

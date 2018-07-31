@@ -2,7 +2,6 @@
 <div class="index">
   <section class="section">
     <div class="container">
-      <logo/>
       <h1 class="title">
         Simpego Template
       </h1>

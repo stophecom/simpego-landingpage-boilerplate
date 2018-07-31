@@ -5,6 +5,8 @@
       <h1 class="title">
         Simpego Template
       </h1>
+
+      <button class="button is-primary">Super button</button>
     </div>
   </section>
   </div>

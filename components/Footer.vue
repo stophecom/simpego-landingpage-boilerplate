@@ -23,12 +23,6 @@
     </footer>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style lang="scss">
 .footer {
   margin-top: 1em;

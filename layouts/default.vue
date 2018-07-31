@@ -34,6 +34,7 @@ html {
 
 .main {
   margin-top: $navbar-height;
+  min-height: calc(80vh);
 }
 
 </style>

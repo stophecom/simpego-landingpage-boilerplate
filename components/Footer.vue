@@ -3,10 +3,9 @@
         <div class="container">
             <nav>
                 <ul class="footer__menu">
-                    <li class="logo"><a class="active" aria-current="true" alt="Startseite" href="https://www.simpego.ch/"><img alt="Simpego Logo" src="https://www.simpego.ch/static/simpego_logo@2x.ca11248d.png" width="104" height="27"></a></li>
+                    <li class="logo"><a class="active" aria-current="true" alt="Startseite" href="/"><img alt="Simpego Logo" src="/images/logo.png" width="104" height="27"></a></li>
                     <li><a aria-current="false" href="https://www.simpego.ch/about/">Über Simpego</a></li>
                     <li><a aria-current="false" href="https://www.simpego.ch/faq/">FAQ</a></li>
-                    <li><a href="https://blog.simpego.ch?utm_medium=website&amp;utm_source=simpego.ch" rel="noopener noreferrer" target="_blank">Blog</a></li>
                     <li><a aria-current="false" href="https://www.simpego.ch/rechtliches/">Rechtliches</a></li>
                     <li><a aria-current="false" href="https://www.simpego.ch/kontakt/">Kontakt</a></li>
                 </ul>
@@ -17,9 +16,9 @@
             </ul>
         </div>
         <ul class="social-media-links">
-            <li><a aria-label="Facebook" href="https://www.facebook.com/simpego" rel="noopener noreferrer" target="_blank"><img alt="Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAABGdBTUEAALGPC/xhBQAAAZRJREFUSA3tVLFOAkEQ3eEONCaoBTGRDzAUljbaW1KpJMTCRGtbYyz8DL/AAhO5hj/Alkp7IlZKLNSc8RRux5kgjTcDd8mWt83tvXnzdvbN7oJJOdrt9vpohMfW4q4xsGEMVgBMgdJ/EM0nzd8IH8I8PUSEViu4RLTnxF2cx58pOBG7vaEKDuYJTePedCJ9a7XNCxI7lWIaplbY6XQqYfg9oCqXtGQJ9yWQsTCMTqi6TGKcpwpSx6ibyBxtfADAAwWfaBeWSfSPMwRxS1Oi1G65vLBXr9df/3P4HCVGr9cr0nZXEoE/gM7cmSTGYVGw3x+uamKMe171XouLgr4fqd0nn8aNxs5XJkGNnAYXK0yTqHGcC/LFP0yuZpfpVblK4nzWTAzgHUkxxPjZtza+loIaRsfJo0Qtp+V4y/DoVLBQcCxoLQycVlgqWbdbtrY6oNcGusmOYpGw7SQ+eaKo03dC7J2vpHhngyBYi6L4RUjiN2/cbO7zguJw6iGvkAuKPmcCcw8z2SWScw9FWzKBuYeZ7BLJv+bufkmZN8cSAAAAAElFTkSuQmCC" width="10" height="20"></a></li>
-            <li><a aria-label="Twitter" href="https://twitter.com/Simpego_Schweiz" rel="noopener noreferrer" target="_blank"><img alt="Twitter" src="https://www.simpego.ch/static/icon-twitter@2x.28059266.png" width="22" height="18"></a></li>
-            <li><a aria-label="Instagram" href="https://www.instagram.com/simpego" rel="noopener noreferrer" target="_blank"><img alt="Instagram" src="https://www.simpego.ch/static/icon-instagram@2x.10cb49b0.png" width="20" height="20"></a></li>
+            <li><a aria-label="Facebook" href="https://www.facebook.com/simpego" rel="noopener noreferrer" target="_blank"><span class="fa fa-facebook"></span></a></li>
+            <li><a aria-label="Twitter" href="https://twitter.com/Simpego_Schweiz" rel="noopener noreferrer" target="_blank"><span class="fa fa-twitter"></span></a></li>
+            <li><a aria-label="Instagram" href="https://www.instagram.com/simpego" rel="noopener noreferrer" target="_blank"><span class="fa fa-instagram"></span></a></li>
         </ul>
     </footer>
 </template>
@@ -76,8 +75,13 @@ export default {
   }
 
   .social-media-links {
+    display: flex;
     justify-content: center;
     margin-top: 1em;
+
+    a {
+      padding: 0.4rem;
+    }
   }
 }
 

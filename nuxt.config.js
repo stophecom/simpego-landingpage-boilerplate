@@ -37,6 +37,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/font-awesome',
     ['nuxt-sass-resources-loader', './assets/main.scss']
   ],
 

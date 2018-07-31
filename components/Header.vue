@@ -1,7 +1,7 @@
 <template>
     <nav class="header navbar is-fixed-top">
         <div class="container">
-            <div class="navbar-brand"><a class="navbar-item header-logo active" aria-current="true" href="https://www.simpego.ch/">
+            <div class="navbar-brand"><a class="navbar-item header-logo active" aria-current="true" href="/">
             <img alt="Simpego Logo" src="/images/logo.png" width="104" height="27"></a>
             </div>
             <div class="navbar-menu" id="navigation">

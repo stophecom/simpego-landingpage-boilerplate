@@ -1,0 +1,62 @@
+
+$family-sans-serif: 'Work Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+
+// Colors
+$green: #0abb72;
+
+// Responsiveness
+$gap: 32px;
+$widescreen: 1024px + (2 * $gap);
+$fullhd-enabled: false;
+
+// Miscellaneous
+$radius: 5px;
+
+// 3. Set the derived variables
+// Colors
+$primary: $green;
+$info: #0a1d69;
+$text: #666;
+$text-light: #a6a6ab;
+$text-strong: #060a39;
+
+// Custom
+$colorPlaceholder: $text-light;
+
+// Link Colors
+$link: $green;
+$link-visited: $green;
+
+// Typography
+$body-background-color: white;
+$body-color: $text;
+$body-line-height: 1.4;
+$body-rendering: optimizeLegibility;
+$body-size: 17px;
+
+// Components
+// Navbar
+$navbar-height: 3.6rem;
+$navbar-item-color: $text;
+$navbar-dropdown-arrow: $text;
+$navbar-item-hover-color: $text;
+
+// Elements
+// Form
+$input-shadow: none;
+$input-focus-box-shadow-size: 0;
+
+// 4. Setup your Custom Colors
+$secondary: #3b4a87;
+/* stylelint-disable-next-line */
+$secondary-invert: findColorInvert($secondary);
+
+// 5. Add new color variables to the color map.
+@import '~bulma/sass/utilities/derived-variables';
+$addColors: (
+  'secondary':($secondary, $secondary-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// Section
+$sectionPadding: 4vw;

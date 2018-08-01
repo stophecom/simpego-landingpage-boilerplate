@@ -12,8 +12,8 @@
 <style lang="scss">
 
 .header {
-  background-color: white;
-  border-bottom: 1px solid #ececec;
+  background-color: $defaultBackground;
+  border-bottom: 1px solid $colorBorder;
   height: $header-height;
   left: 0;
   padding-left: $sectionPadding;
@@ -43,7 +43,4 @@
     margin-left: auto;
   }
 }
-
-
-
 </style>

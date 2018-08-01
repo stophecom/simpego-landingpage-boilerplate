@@ -59,10 +59,6 @@ ul {
   min-height: calc(80vh);
 }
 
-.section {
-  padding: calc(3rem + 5vh) $sectionPadding;
-}
-
 .container {
   margin: 0 auto;
   position: relative;

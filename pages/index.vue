@@ -2,9 +2,19 @@
 <div class="index">
   <section class="section">
     <div class="container">
-      <button class="button is-primary">Super button</button>
+      <Button color="primary">Primary button</Button>
+      <Button color="secondary">Secondary button</Button>
     </div>
   </section>
   </div>
 </template>
 
+<script>
+import Button from '../components/Button'
+export default {
+  components: {
+    Button
+  }
+
+}
+</script>

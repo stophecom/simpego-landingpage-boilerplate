@@ -25,6 +25,9 @@ export default {
 html {
   font-family: $family-sans-serif;
   font-size: $body-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 *, *:before, *:after
@@ -57,13 +60,13 @@ ul {
 }
 
 .section {
-  padding-left: $sectionPadding;
-  padding-right: $sectionPadding;
+  padding: calc(3rem + 5vh) $sectionPadding;
 }
 
 .container {
   margin: 0 auto;
   position: relative;
+  max-width: $maxPageWidth;
 }
 
 </style>

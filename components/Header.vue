@@ -12,6 +12,7 @@
 <style lang="scss">
 
 .header {
+  background-color: white;
   border-bottom: 1px solid #ececec;
   height: $header-height;
   left: 0;
